@@ -42,8 +42,8 @@ tailwind.config = {
   .h-display{font-family:'Archivo',sans-serif;font-weight:900;letter-spacing:-.03em;line-height:.94;}
   .lab{font-family:'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;}
   .hero-scrim{background:
-     linear-gradient(90deg, rgba(14,15,18,.94) 0%, rgba(14,15,18,.74) 38%, rgba(14,15,18,.22) 68%, rgba(14,15,18,.45) 100%),
-     linear-gradient(0deg, rgba(14,15,18,.95) 0%, rgba(14,15,18,0) 42%);}
+     linear-gradient(90deg, rgba(14,15,18,.80) 0%, rgba(14,15,18,.52) 34%, rgba(14,15,18,.10) 62%, rgba(14,15,18,0) 100%),
+     linear-gradient(0deg, rgba(14,15,18,.82) 0%, rgba(14,15,18,0) 38%);}
   .tile-img{filter:grayscale(.32) contrast(1.05) brightness(.84);transition:filter .5s ease, transform .9s cubic-bezier(.2,.7,.2,1);}
   .group:hover .tile-img{filter:grayscale(0) contrast(1.08) brightness(.92);transform:scale(1.06);}
   .edge{border-color:rgba(255,255,255,.10);}
@@ -207,11 +207,18 @@ tailwind.config = {
         <div class="absolute left-4 bottom-4 lab text-[10px] text-white/90">GMK-System · Stützmauerelemente</div>
       </div>
       <div class="grid grid-cols-3 gap-4 mt-4">
-        <div class="rounded-sm overflow-hidden border edge aspect-square"><img src="img/Waschbeton.png" alt="Oberfläche Waschbeton" class="w-full h-full object-cover"/></div>
-        <div class="rounded-sm overflow-hidden border edge aspect-square"><img src="img/OSB.png" alt="Oberfläche OSB-Struktur" class="w-full h-full object-cover"/></div>
-        <div class="rounded-sm overflow-hidden border edge aspect-square flex items-center justify-center bg-ink3">
-          <div class="text-center px-2"><div class="h-display text-2xl text-signal">3</div><div class="lab text-[8px] text-muted mt-1">Oberflächen-strukturen</div></div>
-        </div>
+        <figure class="relative rounded-sm overflow-hidden border edge aspect-square">
+          <img src="img/Waschbeton.png" alt="Oberfläche Waschbeton" class="w-full h-full object-cover"/>
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent px-2 pt-5 pb-1.5 lab text-[8px] text-white/90">Waschbeton</figcaption>
+        </figure>
+        <figure class="relative rounded-sm overflow-hidden border edge aspect-square">
+          <img src="img/OSB.png" alt="Oberfläche OSB-Struktur" class="w-full h-full object-cover"/>
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent px-2 pt-5 pb-1.5 lab text-[8px] text-white/90">OSB-Struktur</figcaption>
+        </figure>
+        <figure class="relative rounded-sm overflow-hidden border edge aspect-square">
+          <img src="img/IMG_3066.png" alt="Oberfläche schalungsglatt" class="w-full h-full object-cover"/>
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/85 to-transparent px-2 pt-5 pb-1.5 lab text-[8px] text-white/90">Schalungsglatt</figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -253,7 +260,7 @@ tailwind.config = {
 <section id="betrieb" class="bg-ink2 border-y edge">
   <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2">
     <div class="relative min-h-[360px] lg:min-h-[600px] order-2 lg:order-1">
-      <img src="img/Header-Large-Korrodis.png" alt="Guido und Marco Korrodi" class="absolute inset-0 w-full h-full object-cover object-top" />
+      <img src="img/korrodis_home2.png" alt="Guido und Marco Korrodi vor dem Firmenfahrzeug" class="absolute inset-0 w-full h-full object-cover object-[50%_30%]" />
       <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-ink2 via-ink2/20 to-transparent"></div>
       <div class="absolute left-6 bottom-6 lab text-[10px] text-white/85">Guido &amp; Marco Korrodi · Inhaber / Geschäftsleitung</div>
     </div>
@@ -293,10 +300,10 @@ tailwind.config = {
       </div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 grid-min">
-      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv"><img src="img/Header-Hangverbauungen.png" class="tile-img w-full h-full object-cover" alt="Hangverbauung"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Hangverbauung</span></div>
-      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d1"><img src="img/Header-Pfaehlung.png" class="tile-img w-full h-full object-cover" alt="Pfahlgründung"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Pfahlgründung</span></div>
-      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d2"><img src="img/Header-Transport.png" class="tile-img w-full h-full object-cover" alt="Fahrzeugflotte"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Transport &amp; Kran</span></div>
-      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d3"><img src="img/Header-Bachverbau.png" class="tile-img w-full h-full object-cover" alt="Gewässerbau"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Gewässerbau</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv"><img src="img/Header-Hangverbauungen.png" class="tile-img w-full h-full object-cover" alt="Hangverbauung"><div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/55 to-transparent"></div><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Hangverbauung</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d1"><img src="img/Header-Pfaehlung.png" class="tile-img w-full h-full object-cover" alt="Pfahlgründung"><div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/55 to-transparent"></div><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Pfahlgründung</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d2"><img src="img/Header-Transport.png" class="tile-img w-full h-full object-cover" alt="Fahrzeugflotte"><div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/55 to-transparent"></div><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Transport &amp; Kran</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d3"><img src="img/Header-Bachverbau.png" class="tile-img w-full h-full object-cover" alt="Gewässerbau"><div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/55 to-transparent"></div><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Gewässerbau</span></div>
     </div>
   </div>
 </section>
@@ -311,10 +318,10 @@ tailwind.config = {
     <div id="ref-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(255,255,255,.10)] border edge rounded-sm overflow-hidden grid-min"></div>
 
     <!-- partner marquee -->
-    <div class="mt-14 rv">
-      <div class="lab text-[10px] text-muted mb-5 text-center">Partner &amp; Lieferanten</div>
-      <div class="relative overflow-hidden border-y edge py-5">
-        <div class="flex gap-12 whitespace-nowrap marquee w-max text-[#C9CDD3]">
+    <div class="mt-20 md:mt-24 rv">
+      <div class="lab text-[10px] text-muted mb-7 text-center">Partner &amp; Lieferanten</div>
+      <div class="relative overflow-hidden border-y edge py-5 flex items-center">
+        <div class="flex items-center gap-12 whitespace-nowrap marquee w-max text-[#C9CDD3]">
           <span class="lab text-[12px]">Menzi Muck AG</span><span class="lab text-[12px] text-signal">·</span>
           <span class="lab text-[12px]">Eberhard Recycling AG</span><span class="lab text-[12px] text-signal">·</span>
           <span class="lab text-[12px]">Toggenburger AG</span><span class="lab text-[12px] text-signal">·</span>
