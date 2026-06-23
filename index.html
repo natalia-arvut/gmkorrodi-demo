@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>G. + M. Korrodi AG — Ihr Tiefbau-Spezialist im Zürcher Oberland</title>
+<meta name="description" content="Spezialtiefbau im Zürcher Oberland seit 2004. Baugrubensicherung, Pfahlgründung, das patentierte GMK-System, Hangverbauungen, Aushub, Strassen- und Leitungsbau – alles aus einer Hand. G. + M. Korrodi AG, Wetzikon & Bäretswil ZH." />
+<meta name="keywords" content="Tiefbau, Spezialtiefbau, Baugrubensicherung, Pfahlgründung, GMK-System, Hangverbauungen, Strassenbau, Leitungsbau, Gartenbau, Winterdienst, Zürcher Oberland, Wetzikon, Bäretswil" />
+<meta property="og:title" content="G. + M. Korrodi AG — Ihr Tiefbau-Spezialist im Zürcher Oberland" />
+<meta property="og:description" content="Spezialtiefbau seit 2004 – alles aus einer Hand. Patentiertes GMK-System, Pfahlgründungen bis 21 m, Kran bis 26 m Ausladung." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Archivo', 'sans-serif'],
+        body: ['"IBM Plex Sans"', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'monospace'],
+      },
+      colors: {
+        ink:    '#0E0F12',
+        ink2:   '#15171C',
+        ink3:   '#1C2027',
+        paper:  '#F3F1EB',
+        paper2: '#E8E5DC',
+        signal: '#FFCE00',
+        signald:'#E5B800',
+        muted:  '#9AA1AB',
+      },
+    },
+  },
+}
+</script>
+<style>
+  html,body{background:#0E0F12;}
+  ::selection{background:#FFCE00;color:#0E0F12;}
+  .h-display{font-family:'Archivo',sans-serif;font-weight:900;letter-spacing:-.03em;line-height:.94;}
+  .lab{font-family:'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;}
+  .hero-scrim{background:
+     linear-gradient(90deg, rgba(14,15,18,.94) 0%, rgba(14,15,18,.74) 38%, rgba(14,15,18,.22) 68%, rgba(14,15,18,.45) 100%),
+     linear-gradient(0deg, rgba(14,15,18,.95) 0%, rgba(14,15,18,0) 42%);}
+  .tile-img{filter:grayscale(.32) contrast(1.05) brightness(.84);transition:filter .5s ease, transform .9s cubic-bezier(.2,.7,.2,1);}
+  .group:hover .tile-img{filter:grayscale(0) contrast(1.08) brightness(.92);transform:scale(1.06);}
+  .edge{border-color:rgba(255,255,255,.10);}
+  .edge-d{border-color:rgba(0,0,0,.12);}
+  .rule-y::before{content:"";display:block;width:34px;height:3px;background:#FFCE00;margin-bottom:1.1rem;}
+  /* reveal */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1);}
+  .rv.in{opacity:1;transform:none;}
+  .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}
+  @media (prefers-reduced-motion: reduce){.rv{opacity:1;transform:none;transition:none}.tile-img{transition:none}}
+  .marquee{animation:mq 38s linear infinite}
+  @keyframes mq{to{transform:translateX(-50%)}}
+  .nav-link{position:relative}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFCE00;transition:width .3s ease}
+  .nav-link:hover::after{width:100%}
+  .grid-min>*{min-width:0}
+  .ov-grid{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;}
+</style>
+</head>
+<body class="font-body text-[#ECEEF1] bg-ink antialiased">
+
+<!-- ░░ TOP BAR ░░ -->
+<div class="hidden md:block bg-ink2 border-b edge text-[12px]">
+  <div class="max-w-7xl mx-auto px-6 h-9 flex items-center justify-between text-muted">
+    <span class="lab text-[10.5px] text-signal">Spezialtiefbau · Zürcher Oberland · seit 2004</span>
+    <div class="flex items-center gap-6">
+      <a href="tel:0445001115" class="hover:text-white transition">Tel. 044 500 11 15</a>
+      <span class="opacity-30">/</span>
+      <a href="mailto:info@gmkorrodi.ch" class="hover:text-white transition">info@gmkorrodi.ch</a>
+    </div>
+  </div>
+</div>
+
+<!-- ░░ NAV ░░ -->
+<header id="nav" class="sticky top-0 z-50 bg-ink/85 backdrop-blur-md border-b edge">
+  <div class="max-w-7xl mx-auto px-6 h-[68px] flex items-center justify-between">
+    <a href="#top" class="flex items-baseline gap-2.5 group/logo">
+      <span class="h-display text-[21px] tracking-tight text-white">G.<span class="text-signal">+</span>M. KORRODI</span>
+      <span class="lab text-[9px] text-muted hidden sm:inline">…grenzenlos</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-9 text-[13.5px] font-medium text-[#C9CDD3]">
+      <a href="#leistungen" class="nav-link">Leistungen</a>
+      <a href="#gmk" class="nav-link">GMK-System</a>
+      <a href="#betrieb" class="nav-link">Betrieb</a>
+      <a href="#referenzen" class="nav-link">Referenzen</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="#kontakt" class="group inline-flex items-center gap-2 bg-signal text-ink font-semibold text-[13.5px] pl-4 pr-3.5 py-2.5 rounded-sm hover:bg-white transition-colors">
+      Offerte anfragen
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" class="group-hover:translate-x-0.5 transition-transform"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ░░ HERO ░░ -->
+<section id="hero" class="relative w-full overflow-hidden min-h-[calc(100svh-68px)] flex">
+  <img src="img/hero.png" alt="Tiefbau im Zürcher Oberland – Bagger und Bohrgerät an einem Hang" class="absolute inset-0 w-full h-full object-cover object-[60%_50%]" />
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="absolute inset-0 ov-grid opacity-60"></div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col justify-center">
+    <div class="max-w-[760px]">
+      <div class="lab text-[11px] text-signal mb-6 flex items-center gap-3 rv in">
+        <span class="inline-block w-8 h-px bg-signal"></span>
+        Ihr Tiefbau-Spezialist · Wetzikon &amp; Bäretswil ZH
+      </div>
+      <h1 class="h-display text-white text-[clamp(2.7rem,7.6vw,6.2rem)]">
+        Tiefbau, der<br>keine Grenzen<br><span class="text-signal">kennt.</span>
+      </h1>
+      <p class="mt-7 text-[clamp(1rem,1.6vw,1.22rem)] text-[#C9CDD3] max-w-[540px] leading-relaxed">
+        Von der Baugrubensicherung über Pfahlgründung und das patentierte GMK-System bis zu Aushub, Strassen- und Leitungsbau&nbsp;– <span class="text-white font-medium">alles aus einer Hand</span>, ohne Subunternehmer.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#leistungen" class="group inline-flex items-center gap-2.5 bg-signal text-ink font-semibold px-6 py-3.5 rounded-sm hover:bg-white transition-colors">
+          Unsere Leistungen
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" class="group-hover:translate-y-0.5 transition-transform"><path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#kontakt" class="inline-flex items-center gap-2.5 border edge text-white font-medium px-6 py-3.5 rounded-sm hover:border-signal hover:text-signal transition-colors">
+          Projekt besprechen
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- scroll hint -->
+  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 lab text-[9.5px] text-muted hidden md:flex items-center gap-2">
+    <span class="w-px h-7 bg-gradient-to-b from-signal/0 via-signal to-signal/0"></span>
+  </div>
+</section>
+
+<!-- ░░ STATS BAND ░░ -->
+<section class="bg-ink2 border-y edge">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 divide-x divide-y md:divide-y-0 edge grid-min">
+    <div class="px-5 py-7 rv"><div class="h-display text-3xl md:text-4xl text-white">2004</div><div class="lab text-[10px] text-muted mt-1.5">Gegründet</div></div>
+    <div class="px-5 py-7 rv rv-d1"><div class="h-display text-3xl md:text-4xl text-white">~30</div><div class="lab text-[10px] text-muted mt-1.5">Mitarbeiter</div></div>
+    <div class="px-5 py-7 rv rv-d2"><div class="h-display text-3xl md:text-4xl text-signal">21 m</div><div class="lab text-[10px] text-muted mt-1.5">Tiefenfundation</div></div>
+    <div class="px-5 py-7 rv rv-d3"><div class="h-display text-3xl md:text-4xl text-white">26 m</div><div class="lab text-[10px] text-muted mt-1.5">Kran-Ausladung</div></div>
+    <div class="px-5 py-7 rv rv-d3 col-span-2 md:col-span-1"><div class="h-display text-3xl md:text-4xl text-signal">2013</div><div class="lab text-[10px] text-muted mt-1.5">GMK-System patentiert</div></div>
+  </div>
+</section>
+
+<!-- ░░ INTRO ░░ -->
+<section class="bg-ink py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-end">
+    <div class="lg:col-span-7 rv">
+      <div class="lab text-[11px] text-signal mb-5">01 — Der Betrieb</div>
+      <h2 class="h-display text-[clamp(1.9rem,3.6vw,3.1rem)] text-white max-w-[18ch]">
+        Vom Zwei-Mann-Betrieb zum gestandenen KMU.
+      </h2>
+    </div>
+    <div class="lg:col-span-5 rv rv-d1">
+      <p class="text-[#B9BEC6] leading-relaxed text-[1.02rem]">
+        Hinter der G. + M. Korrodi AG stehen die Brüder <span class="text-white">Guido und Marco Korrodi</span>. Gegründet 2004 mit Hauptsitz in Bäretswil, befinden sich Büro und Werkhof seit 2014 in der Industriezone Wetzikon. Aus einem Zwei-Mann-Betrieb sind wir zu einem erfolgreichen KMU mit rund 30 Mitarbeitern gewachsen&nbsp;– mit speziell leichten Maschinen, die selbst auf engstem Raum Tiefenfundationen bis 21 m ausführen.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ LEISTUNGEN ░░ -->
+<section id="leistungen" class="bg-ink pb-8">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 border-t edge pt-12 mb-12">
+      <div class="rv">
+        <div class="lab text-[11px] text-signal mb-4">02 — Dienstleistungen</div>
+        <h2 class="h-display text-[clamp(2rem,4.4vw,3.6rem)] text-white">Grenzenloses<br>Angebot.</h2>
+      </div>
+      <p class="md:max-w-sm text-[#9AA1AB] leading-relaxed rv rv-d1">
+        Unser Kerngeschäft ist der Spezialtiefbau. Mit der Zeit haben wir unsere Spezialgebiete stetig erweitert&nbsp;– heute decken wir vierzehn Fachbereiche ab, von der Baugrube bis zum Garten.
+      </p>
+    </div>
+
+    <div id="svc-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 grid-min"></div>
+  </div>
+</section>
+
+<!-- ░░ GMK SYSTEM (signature USP) ░░ -->
+<section id="gmk" class="relative bg-ink2 border-y edge overflow-hidden py-20 md:py-28">
+  <div class="absolute inset-0 ov-grid opacity-50"></div>
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="rv">
+      <div class="inline-flex items-center gap-2 border border-signal/40 text-signal lab text-[10px] px-3 py-1.5 rounded-sm mb-7">
+        <span class="w-1.5 h-1.5 bg-signal rounded-full"></span> Patentiert seit 2013
+      </div>
+      <h2 class="h-display text-[clamp(2.1rem,4.2vw,3.6rem)] text-white leading-[.95]">Das GMK-System.</h2>
+      <p class="mt-6 text-[#B9BEC6] leading-relaxed max-w-[52ch]">
+        Unser eigens entwickeltes, patentiertes Stützmauersystem für Hangsicherungen jeder Art. Die Mauerelemente werden individuell nach Baustellenmass aus einem Guss gefertigt&nbsp;– bewährt an SBB-Bahntrassen, für den Kanton Zürich und zahlreiche Gemeinden.
+      </p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-3.5">
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Individuell nach Mass gefertigt</span></div>
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Zeit-, Kosten- und Materialeinsparung</span></div>
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Frost- und tausalzbeständig</span></div>
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Verschiedene Oberflächen &amp; Farben</span></div>
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Statischer Nachweis vorhanden</span></div>
+        <div class="flex items-start gap-3"><span class="text-signal mt-1">✓</span><span class="text-[#D6DAE0] text-[.97rem]">Nach 3 Tagen voll belastbar</span></div>
+      </div>
+    </div>
+    <div class="rv rv-d1">
+      <div class="relative rounded-sm overflow-hidden border edge aspect-[4/3]">
+        <img src="img/Header-GMKSystem17.png" alt="GMK-System Stützmauer" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+        <div class="absolute left-4 bottom-4 lab text-[10px] text-white/90">GMK-System · Stützmauerelemente</div>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-4">
+        <div class="rounded-sm overflow-hidden border edge aspect-square"><img src="img/Waschbeton.png" alt="Oberfläche Waschbeton" class="w-full h-full object-cover"/></div>
+        <div class="rounded-sm overflow-hidden border edge aspect-square"><img src="img/OSB.png" alt="Oberfläche OSB-Struktur" class="w-full h-full object-cover"/></div>
+        <div class="rounded-sm overflow-hidden border edge aspect-square flex items-center justify-center bg-ink3">
+          <div class="text-center px-2"><div class="h-display text-2xl text-signal">3</div><div class="lab text-[8px] text-muted mt-1">Oberflächen-strukturen</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ WARUM / VALUES ░░ -->
+<section class="bg-ink py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="rv mb-14">
+      <div class="lab text-[11px] text-signal mb-4">03 — Warum Korrodi</div>
+      <h2 class="h-display text-[clamp(1.9rem,3.8vw,3.2rem)] text-white max-w-[16ch]">Im Grenzenlosen liegt unsere Motivation.</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-[rgba(255,255,255,.10)] border edge rounded-sm overflow-hidden grid-min">
+      <div class="bg-ink p-7 rv">
+        <div class="h-display text-signal text-2xl mb-3">01</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2.5">Alles aus einer Hand</h3>
+        <p class="text-[#9AA1AB] text-[.95rem] leading-relaxed">Sämtliche Tiefbauarbeiten ohne Subunternehmer&nbsp;– von der Baugrube über die Pfählung bis zum fertigen Belag.</p>
+      </div>
+      <div class="bg-ink p-7 rv rv-d1">
+        <div class="h-display text-signal text-2xl mb-3">02</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2.5">Spezialmaschinen</h3>
+        <p class="text-[#9AA1AB] text-[.95rem] leading-relaxed">Leichte, kleine Geräte und der Menzi Muck arbeiten dort, wo herkömmliche Maschinen nicht weiterkommen.</p>
+      </div>
+      <div class="bg-ink p-7 rv rv-d2">
+        <div class="h-display text-signal text-2xl mb-3">03</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2.5">Eigene Innovation</h3>
+        <p class="text-[#9AA1AB] text-[.95rem] leading-relaxed">Mit dem patentierten GMK-System haben wir den Stützmauerbau neu gedacht&nbsp;– schneller, günstiger, langlebiger.</p>
+      </div>
+      <div class="bg-ink p-7 rv rv-d3">
+        <div class="h-display text-signal text-2xl mb-3">04</div>
+        <h3 class="font-display font-bold text-white text-lg mb-2.5">Umweltbewusst</h3>
+        <p class="text-[#9AA1AB] text-[.95rem] leading-relaxed">Unsere Umweltingenieurin (BSc) sorgt für ressourcenschonendes, naturnahes Bauen und Recycling von Material.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ BETRIEB / INHABER ░░ -->
+<section id="betrieb" class="bg-ink2 border-y edge">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2">
+    <div class="relative min-h-[360px] lg:min-h-[600px] order-2 lg:order-1">
+      <img src="img/Header-Large-Korrodis.png" alt="Guido und Marco Korrodi" class="absolute inset-0 w-full h-full object-cover object-top" />
+      <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-ink2 via-ink2/20 to-transparent"></div>
+      <div class="absolute left-6 bottom-6 lab text-[10px] text-white/85">Guido &amp; Marco Korrodi · Inhaber / Geschäftsleitung</div>
+    </div>
+    <div class="order-1 lg:order-2 py-20 md:py-24 lg:pl-16 px-0">
+      <div class="rv">
+        <div class="lab text-[11px] text-signal mb-5">04 — Geschäftsleitung</div>
+        <h2 class="h-display text-[clamp(1.9rem,3.6vw,3rem)] text-white">Junge, Zürcher Tiefbau&shy;unternehmer.</h2>
+        <p class="mt-6 text-[#B9BEC6] leading-relaxed max-w-[48ch]">
+          Als Tiefbau-, Garten- und Strassenbaufirma im Zürcher Oberland fühlen wir uns mit der Region und ihren Einwohnern verbunden. Die beiden Brüder führen ihre Firma im Team&nbsp;– Umweltbewusstsein und Arbeitssicherheit sind für uns selbstverständlich.
+        </p>
+      </div>
+      <div class="mt-9 space-y-5 rv rv-d1">
+        <figure class="border-l-2 border-signal pl-5">
+          <blockquote class="text-white text-[1.02rem] leading-relaxed">„Ein hilfsbereiter und zuverlässiger Umgang mit allen Beteiligten eines Bauprojekts ist für mich sehr wichtig.“</blockquote>
+          <figcaption class="lab text-[10px] text-muted mt-2.5">Guido Korrodi</figcaption>
+        </figure>
+        <figure class="border-l-2 border-signal pl-5">
+          <blockquote class="text-white text-[1.02rem] leading-relaxed">„Optimale Lösungen zur Realisierung der Kundenwünsche, selbst unter schwierigen Bedingungen, zeichnen uns aus.“</blockquote>
+          <figcaption class="lab text-[10px] text-muted mt-2.5">Marco Korrodi</figcaption>
+        </figure>
+      </div>
+      <div class="mt-9 flex flex-wrap gap-4 rv rv-d2">
+        <a href="#kontakt" class="inline-flex items-center gap-2 bg-signal text-ink font-semibold px-5 py-3 rounded-sm hover:bg-white transition-colors text-[14px]">Kontakt aufnehmen</a>
+        <a href="mailto:stephanie@gmkorrodi.ch?subject=Bewerbung" class="inline-flex items-center gap-2 border edge text-white font-medium px-5 py-3 rounded-sm hover:border-signal hover:text-signal transition-colors text-[14px]">Offene Stellen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ IMPRESSIONEN (gallery) ░░ -->
+<section class="bg-ink py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-10 rv">
+      <div>
+        <div class="lab text-[11px] text-signal mb-4">05 — Impressionen</div>
+        <h2 class="h-display text-[clamp(1.8rem,3.4vw,2.8rem)] text-white">Einblick in unsere Arbeit.</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 grid-min">
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv"><img src="img/Header-Hangverbauungen.png" class="tile-img w-full h-full object-cover" alt="Hangverbauung"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Hangverbauung</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d1"><img src="img/Header-Pfaehlung.png" class="tile-img w-full h-full object-cover" alt="Pfahlgründung"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Pfahlgründung</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d2"><img src="img/Header-Transport.png" class="tile-img w-full h-full object-cover" alt="Fahrzeugflotte"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Transport &amp; Kran</span></div>
+      <div class="relative rounded-sm overflow-hidden aspect-[4/5] border edge group rv rv-d3"><img src="img/Header-Bachverbau.png" class="tile-img w-full h-full object-cover" alt="Gewässerbau"><span class="absolute left-3 bottom-3 lab text-[9px] text-white">Gewässerbau</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ REFERENZEN ░░ -->
+<section id="referenzen" class="bg-ink2 border-y edge py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="rv mb-12">
+      <div class="lab text-[11px] text-signal mb-4">06 — Referenzen</div>
+      <h2 class="h-display text-[clamp(2rem,4vw,3.4rem)] text-white max-w-[20ch]">Arbeiten, die in und ausserhalb von Zürich überzeugen.</h2>
+    </div>
+    <div id="ref-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(255,255,255,.10)] border edge rounded-sm overflow-hidden grid-min"></div>
+
+    <!-- partner marquee -->
+    <div class="mt-14 rv">
+      <div class="lab text-[10px] text-muted mb-5 text-center">Partner &amp; Lieferanten</div>
+      <div class="relative overflow-hidden border-y edge py-5">
+        <div class="flex gap-12 whitespace-nowrap marquee w-max text-[#C9CDD3]">
+          <span class="lab text-[12px]">Menzi Muck AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Eberhard Recycling AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Toggenburger AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Debrunner Acifer AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Wacker Neuson AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Notterkran AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Hug Baustoffe AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Fontarocca AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Ernst Schütz Kies + Beton AG</span><span class="lab text-[12px] text-signal">·</span>
+          <!-- dup -->
+          <span class="lab text-[12px]">Menzi Muck AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Eberhard Recycling AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Toggenburger AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Debrunner Acifer AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Wacker Neuson AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Notterkran AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Hug Baustoffe AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Fontarocca AG</span><span class="lab text-[12px] text-signal">·</span>
+          <span class="lab text-[12px]">Ernst Schütz Kies + Beton AG</span><span class="lab text-[12px] text-signal">·</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ KONTAKT / CTA ░░ -->
+<section id="kontakt" class="relative bg-ink overflow-hidden py-20 md:py-28">
+  <div class="absolute inset-0 ov-grid opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-6 rv">
+      <div class="lab text-[11px] text-signal mb-5">07 — Kontakt</div>
+      <h2 class="h-display text-[clamp(2.2rem,4.6vw,4rem)] text-white">Reden wir über<br>Ihr Bauprojekt.</h2>
+      <p class="mt-6 text-[#B9BEC6] leading-relaxed max-w-[46ch]">Gerne stellen wir Ihnen unsere Beratung zur Verfügung und lassen Ihnen eine unverbindliche Offerte zukommen.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:0445001115" class="group inline-flex items-center gap-3 bg-signal text-ink font-semibold px-6 py-4 rounded-sm hover:bg-white transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          044 500 11 15
+        </a>
+        <a href="mailto:info@gmkorrodi.ch" class="inline-flex items-center gap-3 border edge text-white font-medium px-6 py-4 rounded-sm hover:border-signal hover:text-signal transition-colors">
+          info@gmkorrodi.ch
+        </a>
+      </div>
+    </div>
+    <div class="lg:col-span-6 grid sm:grid-cols-2 gap-4 rv rv-d1">
+      <div class="bg-ink2 border edge rounded-sm p-7">
+        <div class="lab text-[10px] text-signal mb-4">Büro &amp; Werkhof</div>
+        <div class="h-display text-white text-xl mb-2">Wetzikon ZH</div>
+        <address class="not-italic text-[#B9BEC6] text-[.96rem] leading-relaxed">
+          G. + M. Korrodi AG<br>Riedstrasse 1<br>8620 Wetzikon
+        </address>
+      </div>
+      <div class="bg-ink2 border edge rounded-sm p-7">
+        <div class="lab text-[10px] text-signal mb-4">Hauptsitz &amp; Werkstatt</div>
+        <div class="h-display text-white text-xl mb-2">Bäretswil ZH</div>
+        <address class="not-italic text-[#B9BEC6] text-[.96rem] leading-relaxed">
+          G. + M. Korrodi AG<br>Baumastrasse 43<br>8344 Bäretswil
+        </address>
+      </div>
+      <div class="sm:col-span-2 bg-ink2 border edge rounded-sm p-7 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="lab text-[10px] text-muted mb-1.5">Erreichbarkeit</div>
+          <div class="text-white">Mo–Fr für Sie da · Winterdienst 24 h / 7 Tage</div>
+        </div>
+        <a href="mailto:info@gmkorrodi.ch" class="lab text-[11px] text-signal hover:text-white transition">info@gmkorrodi.ch →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ░░ FOOTER ░░ -->
+<footer class="bg-ink2 border-t edge pt-16 pb-9">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-12 gap-10 pb-12 border-b edge">
+      <div class="md:col-span-5">
+        <div class="flex items-baseline gap-2.5 mb-4">
+          <span class="h-display text-[22px] text-white">G.<span class="text-signal">+</span>M. KORRODI AG</span>
+          <span class="lab text-[9px] text-muted">…grenzenlos</span>
+        </div>
+        <p class="text-[#9AA1AB] text-[.95rem] leading-relaxed max-w-[42ch]">Ihr Tiefbau-Spezialist im Zürcher Oberland. Spezialtiefbau, Strassen-, Garten- und Leitungsbau&nbsp;– alles aus einer Hand, seit 2004.</p>
+      </div>
+      <div class="md:col-span-3">
+        <div class="lab text-[10px] text-signal mb-4">Navigation</div>
+        <ul class="space-y-2.5 text-[#C9CDD3] text-[.95rem]">
+          <li><a href="#leistungen" class="hover:text-signal transition">Leistungen</a></li>
+          <li><a href="#gmk" class="hover:text-signal transition">GMK-System</a></li>
+          <li><a href="#betrieb" class="hover:text-signal transition">Betrieb</a></li>
+          <li><a href="#referenzen" class="hover:text-signal transition">Referenzen</a></li>
+          <li><a href="#kontakt" class="hover:text-signal transition">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <div class="lab text-[10px] text-signal mb-4">Kontakt &amp; Register</div>
+        <ul class="space-y-2.5 text-[#C9CDD3] text-[.95rem]">
+          <li><a href="tel:0445001115" class="hover:text-signal transition">Tel. 044 500 11 15</a></li>
+          <li><a href="mailto:info@gmkorrodi.ch" class="hover:text-signal transition">info@gmkorrodi.ch</a></li>
+          <li class="text-muted pt-2">Riedstrasse 1, 8620 Wetzikon</li>
+          <li class="text-muted">HR Zürich · MwSt CHE-114.301.767</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-muted">
+      <div>© <span id="yr"></span> G. + M. Korrodi AG&nbsp;– Alle Rechte vorbehalten</div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-white transition">Impressum</a>
+        <a href="#" class="hover:text-white transition">AGB</a>
+        <span class="lab text-[9px] text-muted/60">Konzept-Redesign</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── Services data (real, from old site) ──
+const services = [
+  {n:'01', t:'Baugrubensicherung', img:'Header-Baugrubensicherung.png', d:'Temporäre und permanente Sicherung – Anker, Spritzbeton, Bohrpfahl- und Rühlwände, aus einer Hand.'},
+  {n:'02', t:'Pfahlgründung', img:'Header-Pfaehlung.png', d:'Gebohrte oder gerammte Pfähle bis 21 m Tiefe für sicheren Halt auf jedem Baugrund.'},
+  {n:'03', t:'GMK-System', img:'Header-GMKSystem17.png', d:'Unser patentiertes Stützmauersystem – individuell nach Mass, frost- und tausalzbeständig.'},
+  {n:'04', t:'Hangverbauungen', img:'Header-Hangverbauungen.png', d:'Böschungs- und Hangstabilisierung – auch im steilsten Gelände mit dem Menzi Muck.'},
+  {n:'05', t:'Aushubarbeiten', img:'Header-Aushub.png', d:'Exakte, termingerechte Aushubarbeiten, abgestimmt auf die Geologie des Bodens.'},
+  {n:'06', t:'Strassenbau', img:'Header-Strassenbau.png', d:'Strassen, Wege und Plätze – Belagsarbeiten und Pflästerung in bester Qualität.'},
+  {n:'07', t:'Leitungsbau', img:'Header-Leitungsbau.png', d:'Wasser, Abwasser, Strom, Gas und Kommunikation – vom Hausanschluss bis zur Transportleitung.'},
+  {n:'08', t:'Abbruch & Recycling', img:'Header-Abbruch.png', d:'Fachgerechter Rückbau mit sauberer Materialtrennung und Wiederverwertung.'},
+  {n:'09', t:'Altlastensanierung', img:'Header-Altlasten.png', d:'Saubere Trennung und fachgerechte Entsorgung kontaminierten Materials.'},
+  {n:'10', t:'Gewässerbau & Renaturierung', img:'Header-Bachverbau.png', d:'Bachverbauungen und Revitalisierung – naturnah und fischgerecht.'},
+  {n:'11', t:'Neutralisation & Absetzbecken', img:'Header-Neutralisation.png', d:'Vermietung zur Aufbereitung von Baustellenabwässern, inkl. 24h-Pikettdienst.'},
+  {n:'12', t:'Transport & Kranarbeiten', img:'Header-Transport.png', d:'Moderne Fahrzeugflotte und Kran mit einer Ausladung bis 26 m.'},
+  {n:'13', t:'Gartenbau', img:'Header-Gartenbau.png', d:'Wege, Mauern, Sitzplätze und Teiche – Ihr Garten als persönlicher Erholungsraum.'},
+  {n:'14', t:'Winterdienst', img:'Header-Winterdienst.png', d:'6 Schneeräumungsfahrzeuge, 24-Stunden-Betreuung an 7 Tagen der Woche.'},
+];
+const sg = document.getElementById('svc-grid');
+sg.innerHTML = services.map((s,i)=>`
+  <article class="group relative rounded-sm overflow-hidden border edge bg-ink2 rv ${i%3==1?'rv-d1':i%3==2?'rv-d2':''}">
+    <div class="relative aspect-[16/10] overflow-hidden">
+      <img src="img/${s.img}" alt="${s.t}" loading="lazy" class="tile-img w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-ink2 via-ink2/10 to-transparent"></div>
+      <span class="absolute top-3 left-3 lab text-[10px] text-signal">${s.n}</span>
+    </div>
+    <div class="p-5">
+      <h3 class="font-display font-bold text-white text-[1.06rem] mb-2 group-hover:text-signal transition-colors">${s.t}</h3>
+      <p class="text-[#9AA1AB] text-[.9rem] leading-relaxed">${s.d}</p>
+    </div>
+  </article>`).join('');
+
+// ── References (real) ──
+const refs = [
+  {c:'SBB · Ostschweiz', d:'Verbau GMK-System, Hangsicherung mehrerer Bahntrassen'},
+  {c:'Kanton Zürich · ALN', d:'Gewässerbau, GMK-System, Sanierung Stauwehr Greiselweiher Fischenthal'},
+  {c:'Gemeinde Sedrun', d:'Verbau GMK-System, Strassenbau'},
+  {c:'Frei + Krauer AG · Rapperswil', d:'Leitungsbau 800 m, Wasserhaltung, Ringschluss Wetzikon'},
+  {c:'Dr. Heinrich Jäckli AG', d:'Altlastensanierung Schiessanlage Bäretswil'},
+  {c:'Forster-Linsi AG · Pfäffikon', d:'Tief-, Leitungs- & Strassenbau, Böschungssicherung Hittnau'},
+  {c:'ewp AG · Effretikon', d:'GMK-System Stützmauerelemente auf 36 m Länge'},
+  {c:'Marty Häuser AG · Wil', d:'Aushub, Böschungssicherung, Gartenbau, 12 EFH Bäretswil'},
+  {c:'Männag AG · Männedorf', d:'Tiefbau, Leitungsbau, Sanierung Mülldeponie'},
+];
+document.getElementById('ref-grid').innerHTML = refs.map((r,i)=>`
+  <div class="bg-ink2 p-6 hover:bg-ink3 transition-colors rv ${i%3==1?'rv-d1':i%3==2?'rv-d2':''}">
+    <div class="flex items-start gap-3">
+      <span class="text-signal mt-1 text-sm">▸</span>
+      <div>
+        <div class="font-display font-semibold text-white text-[1rem] leading-snug">${r.c}</div>
+        <div class="text-[#9AA1AB] text-[.88rem] mt-1.5 leading-relaxed">${r.d}</div>
+      </div>
+    </div>
+  </div>`).join('');
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// ── temp reveal-all (?reveal=1) ──
+if(location.search.includes('reveal')){
+  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+  document.querySelectorAll('img[loading="lazy"]').forEach(i=>i.removeAttribute('loading'));
+}
+// ── temp isolate section (?only=ID) ──
+if(location.search.includes('only=')){
+  const id=decodeURIComponent(location.search.split('only=')[1].split('&')[0]);
+  document.querySelectorAll('main > section, footer').forEach(e=>{ e.style.display='none'; });
+  const t=document.getElementById(id);
+  if(t){ t.style.display=''; }
+  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+  document.querySelectorAll('img[loading="lazy"]').forEach(i=>i.removeAttribute('loading'));
+}
+// ── temp scroll helper (?go=SELECTOR) ──
+if(location.search.includes('go=')){
+  const sel=decodeURIComponent(location.search.split('go=')[1].split('&')[0]);
+  document.documentElement.style.scrollBehavior='auto';
+  const el=document.querySelector(sel);
+  if(el){ el.scrollIntoView(); document.querySelectorAll('.rv').forEach(e=>e.classList.add('in')); }
+}
+// ── temp layout check (?check=1) ──
+if(location.search.includes('check')){
+  setTimeout(()=>{
+    const de=document.documentElement, vw=innerWidth, vh=innerHeight;
+    const hero=document.getElementById('hero').getBoundingClientRect();
+    const next=document.querySelector('section.bg-ink2.border-y').getBoundingClientRect();
+    const offenders=[...document.querySelectorAll('*')].filter(e=>e.getBoundingClientRect().right>vw+1).slice(0,4).map(e=>e.tagName+'.'+(e.className||'').toString().slice(0,24));
+    document.title='CHK vw='+vw+' sw='+de.scrollWidth+' overflow='+(de.scrollWidth>vw)+' heroBottom='+Math.round(hero.bottom)+' vh='+vh+' nextTop='+Math.round(next.top)+' oneScreen='+(hero.bottom>=vh-2&&next.top>=vh-1)+' off='+JSON.stringify(offenders);
+  },1200);
+}
+
+// ── Reveal on scroll ──
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
