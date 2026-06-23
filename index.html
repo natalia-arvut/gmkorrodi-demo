@@ -257,42 +257,44 @@ tailwind.config = {
 </section>
 
 <!-- ░░ BETRIEB / INHABER ░░ -->
-<section id="betrieb" class="bg-ink2 border-y edge">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2">
-    <div class="relative min-h-[420px] lg:min-h-[600px] order-2 lg:order-1 grid grid-cols-2">
-      <figure class="relative overflow-hidden border-r edge">
-        <img src="img/Portrait_Guido.png" alt="Guido Korrodi" class="absolute inset-0 w-full h-full object-cover object-[50%_22%]" />
-        <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink2 to-transparent"></div>
-        <figcaption class="absolute left-4 bottom-4 lab text-[10px] text-white">Guido Korrodi</figcaption>
-      </figure>
-      <figure class="relative overflow-hidden">
-        <img src="img/Portrait_Marco.png" alt="Marco Korrodi" class="absolute inset-0 w-full h-full object-cover object-[50%_22%]" />
-        <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink2 to-transparent"></div>
-        <figcaption class="absolute left-4 bottom-4 lab text-[10px] text-white">Marco Korrodi</figcaption>
-      </figure>
-    </div>
-    <div class="order-1 lg:order-2 py-20 md:py-24 lg:pl-16 px-0">
-      <div class="rv">
+<section id="betrieb" class="bg-ink2 border-y edge py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7 rv">
         <div class="lab text-[11px] text-signal mb-5">04 — Geschäftsleitung</div>
         <h2 class="h-display text-[clamp(1.9rem,3.6vw,3rem)] text-white">Junge, Zürcher Tiefbau&shy;unternehmer.</h2>
-        <p class="mt-6 text-[#B9BEC6] leading-relaxed max-w-[48ch]">
-          Als Tiefbau-, Garten- und Strassenbaufirma im Zürcher Oberland fühlen wir uns mit der Region und ihren Einwohnern verbunden. Die beiden Brüder führen ihre Firma im Team&nbsp;– Umweltbewusstsein und Arbeitssicherheit sind für uns selbstverständlich.
-        </p>
       </div>
-      <div class="mt-9 space-y-5 rv rv-d1">
-        <figure class="border-l-2 border-signal pl-5">
-          <blockquote class="text-white text-[1.02rem] leading-relaxed">„Ein hilfsbereiter und zuverlässiger Umgang mit allen Beteiligten eines Bauprojekts ist für mich sehr wichtig.“</blockquote>
-          <figcaption class="lab text-[10px] text-muted mt-2.5">Guido Korrodi</figcaption>
-        </figure>
-        <figure class="border-l-2 border-signal pl-5">
-          <blockquote class="text-white text-[1.02rem] leading-relaxed">„Optimale Lösungen zur Realisierung der Kundenwünsche, selbst unter schwierigen Bedingungen, zeichnen uns aus.“</blockquote>
-          <figcaption class="lab text-[10px] text-muted mt-2.5">Marco Korrodi</figcaption>
-        </figure>
-      </div>
-      <div class="mt-9 flex flex-wrap gap-4 rv rv-d2">
-        <a href="#kontakt" class="inline-flex items-center gap-2 bg-signal text-ink font-semibold px-5 py-3 rounded-sm hover:bg-white transition-colors text-[14px]">Kontakt aufnehmen</a>
-        <a href="mailto:stephanie@gmkorrodi.ch?subject=Bewerbung" class="inline-flex items-center gap-2 border edge text-white font-medium px-5 py-3 rounded-sm hover:border-signal hover:text-signal transition-colors text-[14px]">Offene Stellen →</a>
-      </div>
+      <p class="lg:col-span-5 text-[#B9BEC6] leading-relaxed rv rv-d1">
+        Hinter der G. + M. Korrodi AG stehen die Brüder Guido und Marco Korrodi, die ihre Firma im Team führen. Als Tiefbau-, Garten- und Strassenbaufirma im Zürcher Oberland fühlen wir uns mit der Region verbunden&nbsp;– Umweltbewusstsein und Arbeitssicherheit sind für uns selbstverständlich.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5 mt-12">
+      <article class="bg-ink border edge rounded-sm p-7 rv">
+        <div class="flex items-center gap-4">
+          <img src="img/Portrait_Guido.png" alt="Guido Korrodi" class="w-[68px] h-[68px] rounded-full object-cover object-[50%_18%] border edge shrink-0" />
+          <div>
+            <div class="font-display font-bold text-white text-lg leading-tight">Guido Korrodi</div>
+            <div class="lab text-[10px] text-signal mt-1.5">Inhaber · Geschäftsleitung</div>
+          </div>
+        </div>
+        <blockquote class="mt-5 text-[#C9CDD3] leading-relaxed">„Ein hilfsbereiter und zuverlässiger Umgang mit allen Beteiligten eines Bauprojekts ist für mich sehr wichtig.“</blockquote>
+      </article>
+      <article class="bg-ink border edge rounded-sm p-7 rv rv-d1">
+        <div class="flex items-center gap-4">
+          <img src="img/Portrait_Marco.png" alt="Marco Korrodi" class="w-[68px] h-[68px] rounded-full object-cover object-[50%_18%] border edge shrink-0" />
+          <div>
+            <div class="font-display font-bold text-white text-lg leading-tight">Marco Korrodi</div>
+            <div class="lab text-[10px] text-signal mt-1.5">Inhaber · Geschäftsleitung</div>
+          </div>
+        </div>
+        <blockquote class="mt-5 text-[#C9CDD3] leading-relaxed">„Optimale Lösungen zur Realisierung der Kundenwünsche, selbst unter schwierigen Bedingungen, zeichnen uns aus.“</blockquote>
+      </article>
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-4 rv rv-d2">
+      <a href="#kontakt" class="inline-flex items-center gap-2 bg-signal text-ink font-semibold px-5 py-3 rounded-sm hover:bg-white transition-colors text-[14px]">Kontakt aufnehmen</a>
+      <a href="mailto:stephanie@gmkorrodi.ch?subject=Bewerbung" class="inline-flex items-center gap-2 border edge text-white font-medium px-5 py-3 rounded-sm hover:border-signal hover:text-signal transition-colors text-[14px]">Offene Stellen →</a>
     </div>
   </div>
 </section>
