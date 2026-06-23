@@ -485,38 +485,6 @@ document.getElementById('ref-grid').innerHTML = refs.map((r,i)=>`
 
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-// ── temp reveal-all (?reveal=1) ──
-if(location.search.includes('reveal')){
-  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
-  document.querySelectorAll('img[loading="lazy"]').forEach(i=>i.removeAttribute('loading'));
-}
-// ── temp isolate section (?only=ID) ──
-if(location.search.includes('only=')){
-  const id=decodeURIComponent(location.search.split('only=')[1].split('&')[0]);
-  document.querySelectorAll('main > section, footer').forEach(e=>{ e.style.display='none'; });
-  const t=document.getElementById(id);
-  if(t){ t.style.display=''; }
-  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
-  document.querySelectorAll('img[loading="lazy"]').forEach(i=>i.removeAttribute('loading'));
-}
-// ── temp scroll helper (?go=SELECTOR) ──
-if(location.search.includes('go=')){
-  const sel=decodeURIComponent(location.search.split('go=')[1].split('&')[0]);
-  document.documentElement.style.scrollBehavior='auto';
-  const el=document.querySelector(sel);
-  if(el){ el.scrollIntoView(); document.querySelectorAll('.rv').forEach(e=>e.classList.add('in')); }
-}
-// ── temp layout check (?check=1) ──
-if(location.search.includes('check')){
-  setTimeout(()=>{
-    const de=document.documentElement, vw=innerWidth, vh=innerHeight;
-    const hero=document.getElementById('hero').getBoundingClientRect();
-    const next=document.querySelector('section.bg-ink2.border-y').getBoundingClientRect();
-    const offenders=[...document.querySelectorAll('*')].filter(e=>e.getBoundingClientRect().right>vw+1).slice(0,4).map(e=>e.tagName+'.'+(e.className||'').toString().slice(0,24));
-    document.title='CHK vw='+vw+' sw='+de.scrollWidth+' overflow='+(de.scrollWidth>vw)+' heroBottom='+Math.round(hero.bottom)+' vh='+vh+' nextTop='+Math.round(next.top)+' oneScreen='+(hero.bottom>=vh-2&&next.top>=vh-1)+' off='+JSON.stringify(offenders);
-  },1200);
-}
-
 // ── Reveal on scroll ──
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
