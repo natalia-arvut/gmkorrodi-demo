@@ -42,8 +42,8 @@ tailwind.config = {
   .h-display{font-family:'Archivo',sans-serif;font-weight:900;letter-spacing:-.03em;line-height:.94;}
   .lab{font-family:'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;}
   .hero-scrim{background:
-     linear-gradient(90deg, rgba(14,15,18,.80) 0%, rgba(14,15,18,.52) 34%, rgba(14,15,18,.10) 62%, rgba(14,15,18,0) 100%),
-     linear-gradient(0deg, rgba(14,15,18,.82) 0%, rgba(14,15,18,0) 38%);}
+     linear-gradient(90deg, rgba(14,15,18,.68) 0%, rgba(14,15,18,.40) 32%, rgba(14,15,18,.04) 60%, rgba(14,15,18,0) 100%),
+     linear-gradient(0deg, rgba(14,15,18,.72) 0%, rgba(14,15,18,0) 34%);}
   .tile-img{filter:grayscale(.32) contrast(1.05) brightness(.84);transition:filter .5s ease, transform .9s cubic-bezier(.2,.7,.2,1);}
   .group:hover .tile-img{filter:grayscale(0) contrast(1.08) brightness(.92);transform:scale(1.06);}
   .edge{border-color:rgba(255,255,255,.10);}
@@ -104,7 +104,6 @@ tailwind.config = {
 <section id="hero" class="relative w-full overflow-hidden min-h-[calc(100svh-68px)] flex">
   <img src="img/hero.png" alt="Tiefbau im Zürcher Oberland – Bagger und Bohrgerät an einem Hang" class="absolute inset-0 w-full h-full object-cover object-[60%_50%]" />
   <div class="absolute inset-0 hero-scrim"></div>
-  <div class="absolute inset-0 ov-grid opacity-60"></div>
   <div class="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col justify-center">
     <div class="max-w-[760px]">
       <div class="lab text-[11px] text-signal mb-6 flex items-center gap-3 rv in">
@@ -181,7 +180,6 @@ tailwind.config = {
 
 <!-- ░░ GMK SYSTEM (signature USP) ░░ -->
 <section id="gmk" class="relative bg-ink2 border-y edge overflow-hidden py-20 md:py-28">
-  <div class="absolute inset-0 ov-grid opacity-50"></div>
   <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
     <div class="rv">
       <div class="inline-flex items-center gap-2 border border-signal/40 text-signal lab text-[10px] px-3 py-1.5 rounded-sm mb-7">
@@ -201,8 +199,8 @@ tailwind.config = {
       </div>
     </div>
     <div class="rv rv-d1">
-      <div class="relative rounded-sm overflow-hidden border edge aspect-[4/3]">
-        <img src="img/Header-GMKSystem17.png" alt="GMK-System Stützmauer" class="w-full h-full object-cover" />
+      <div class="relative rounded-sm overflow-hidden border edge aspect-[16/10]">
+        <img src="img/Header-GMKSystem17.png" alt="GMK-System Stützmauer" class="w-full h-full object-cover object-[50%_58%]" />
         <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
         <div class="absolute left-4 bottom-4 lab text-[10px] text-white/90">GMK-System · Stützmauerelemente</div>
       </div>
@@ -349,7 +347,6 @@ tailwind.config = {
 
 <!-- ░░ KONTAKT / CTA ░░ -->
 <section id="kontakt" class="relative bg-ink overflow-hidden py-20 md:py-28">
-  <div class="absolute inset-0 ov-grid opacity-40"></div>
   <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
     <div class="lg:col-span-6 rv">
       <div class="lab text-[11px] text-signal mb-5">07 — Kontakt</div>
